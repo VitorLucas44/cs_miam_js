@@ -21,6 +21,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: white;
+  width: 100%;
 }
 nav h1 span {
   color: #22d2c0;
@@ -31,18 +33,38 @@ nav .navbar {
   align-items: center;
 }
 nav .navbar span {
-  color: #7e7e90;
-  padding: 20px;
-  text-decoration: none;
+  padding: 25px;
 }
 nav .navbar span a {
   text-decoration: none;
+  color: #7e7e90;
+  display: inline-block;
+  position: relative;
+}
+nav .navbar span a:hover {
+  color: black;
+}
+nav .navbar span a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #22d2c0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+nav .navbar span a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 nav button {
   color: white;
   background-color: #22d2c0;
   border-radius: 30px;
-  width: 110px;
+  width: 130px;
   height: 40px;
   border: none;
   align-items: center;
