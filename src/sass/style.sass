@@ -5,6 +5,11 @@
 body
     padding: 0
     margin: 0
+    background-color: white
+    color: black
+.dark
+    background-color: black
+    color: white
 @font-face 
     font-family: "Cookies"
     src: url(../font/CookiesandmilkRegular-W64Y.ttf)
@@ -18,7 +23,10 @@ nav
     align-items: center
     background-color: white
     width: 100%
-    h1
+    a
+        text-decoration: none
+        color: black
+        h1
         span
             color: #22d2c0
     .navbar
@@ -35,6 +43,7 @@ nav
             a:hover
                 color: black
                 font-weight: bold
+                font-size: 15px
             a:after
                 content: ''
                 position: absolute
