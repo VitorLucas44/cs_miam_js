@@ -1,0 +1,9 @@
+body {
+  font-family: "Cookies";
+  background-color: red;
+}
+
+@font-face {
+  font-family: "Cookies";
+  src: url(../font/CookiesandmilkRegular-W64Y.ttf);
+}
