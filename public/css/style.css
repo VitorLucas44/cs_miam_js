@@ -11,6 +11,10 @@ body {
 
 .dark {
   background-color: black;
+  color: whit;
+}
+.dark section1 {
+  background-color: black;
   color: white;
 }
 
@@ -81,4 +85,35 @@ nav button {
   height: 40px;
   border: none;
   align-items: center;
+}
+
+section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+  height: 690px;
+}
+section1 img {
+  width: 450px;
+}
+section1 .sec1txt h1 {
+  font-family: Cookies;
+}
+section1 .ytb {
+  margin-top: 15px;
+}
+section1 button {
+  color: white;
+  background-color: #22d2c0;
+  border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  border: none;
+  align-items: center;
+}
+section1 button a {
+  text-decoration: none;
+  color: white;
 }
