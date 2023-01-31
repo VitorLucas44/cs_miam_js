@@ -13,11 +13,11 @@ body {
   background-color: black;
   color: whit;
 }
-.dark section1 {
+.dark #section1 {
   background-color: #433f3f;
   color: white;
 }
-.dark section1 span a {
+.dark #section1 span a {
   color: white;
 }
 
@@ -42,7 +42,7 @@ nav a {
   text-decoration: none;
   color: black;
 }
-nav a span {
+nav a h1 span {
   color: #22d2c0;
 }
 nav .navbar {
@@ -93,7 +93,7 @@ nav button:hover {
   background-color: #d24540;
 }
 
-section1 {
+#section1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,16 +101,16 @@ section1 {
   background-color: #eeeeee;
   height: 690px;
 }
-section1 img {
+#section1 img {
   width: 450px;
 }
-section1 .sec1txt h1 {
+#section1 .sec1txt h1 {
   font-family: Cookies;
 }
-section1 .ytb {
+#section1 .ytb {
   margin-top: 15px;
 }
-section1 button {
+#section1 button {
   color: white;
   background-color: #22d2c0;
   border-radius: 30px;
@@ -120,27 +120,89 @@ section1 button {
   align-items: center;
   box-shadow: inset 0 0 1em, 0 0 1em #d24540;
 }
-section1 button a {
+#section1 button a {
   text-decoration: none;
   color: white;
 }
-section1 button:hover {
+#section1 button:hover {
   background-color: #d24540;
   transition-duration: 1s;
 }
-section1 span a {
+#section1 span a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-section1 span i {
+#section1 span i {
   font-size: 20px;
   margin-left: 20px;
   color: #22d2c0;
 }
-section1 span:hover a {
+#section1 span:hover a {
   color: #22d2c0;
 }
-section1 span:hover i {
+#section1 span:hover i {
   color: #d24540;
 }
+
+#section2 {
+  align-content: center;
+  margin: 5%;
+}
+#section2 p {
+  color: #706969;
+  text-align: center;
+}
+#section2 h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+#section2 h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+#section2 .sec2 {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+}
+#section2 .imgsec2 {
+  margin-right: 2%;
+}
+#section2 .imgsec2 img {
+  width: 700px;
+  height: 600px;
+}
+#section2 .imgsec2 .blanc {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 150px;
+  width: 70%;
+  left: 110px;
+}
+#section2 .imgsec2 .blanc span {
+  font-size: 20px;
+  color: #22d2c0;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#section2 .txtsec2 {
+  list-style-image: url("../img/check-double-solid.svg");
+  list-style: #22d2c0;
+}
+#section2 .txtsec2 .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 .txtsec2 .play img {
+  widows: 300px;
+  height: 350px;
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
