@@ -369,4 +369,28 @@ nav button:hover {
   color: #bcb4ab;
 }
 
+#section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section5 h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+#section5 span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+#section5 p {
+  color: #706969;
+  text-align: center;
+}
+#section5 .wrapper #products img {
+  width: 200px;
+  height: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */
