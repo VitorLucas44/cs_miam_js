@@ -63,6 +63,15 @@ body {
 .dark #section5 button.active {
   color: #22d2c0;
 }
+.dark nav {
+  background-color: black;
+}
+.dark nav h1 {
+  color: white;
+}
+.dark nav .navbar a:hover {
+  color: white;
+}
 
 @font-face {
   font-family: "Cookies";
@@ -414,6 +423,20 @@ nav button:hover {
 #section5 .wrapper #products img {
   width: 200px;
   height: 200px;
+}
+
+.testim .titre p {
+  color: #706969;
+  text-align: center;
+}
+.testim .titre h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+.testim .titre h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
 }
 
 /*# sourceMappingURL=style.css.map */

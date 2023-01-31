@@ -47,7 +47,7 @@ let products = {
     category: "Dinner",
     ingredients:"salade, tomate, ognion",
     price: "21",
-    image: "./public/img/menu/menu-item-6.png",
+    image: "./public/img/menu/menu-item-1.png",
 },
 {
     productName: "afzefezaazef",
@@ -60,7 +60,7 @@ let products = {
         category: "Starters",
         ingredients:"salade, tomate, ognion",
         price: "8,99",
-        image: "./public/img/menu/menu-item-4.png",
+        image: "./public/img/menu/menu-item-2.png",
 },
 {
     productName: "fazefaez",
@@ -74,7 +74,7 @@ let products = {
         category: "Lunch",
         ingredients:"salade, tomate, ognion",
         price: "10,99",
-        image: "./public/img/menu/menu-item-5.png",
+        image: "./public/img/menu/menu-item-1.png",
 },
 {
     productName: "fazfzaefaze",
@@ -93,6 +93,7 @@ let products = {
     {
         productName: "afzefaez",
         category: "Lunch",
+        ingredients:"salade, tomate, ognion",
         price: "15",
         image: "./public/img/menu/menu-item-4.png",
 },
@@ -171,7 +172,71 @@ elements.forEach((element) => {
 }
 
 
+
+
+
+
+
+
+
+
+
 //Quand sa va refresh
 window.onload = () => {
     ("Starters");
 };
+
+
+
+
+// variable et get du testim
+let testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimleftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer
+    ;
+window.onload = function () {
+// Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length - 1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+        currentActive = currentSlide;
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+    testimleftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+    })
+    testimRightArrow.addEventListener("click", function () {
+        playSlide(currentSlide += 1);
+    })
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+    playSlide(currentSlide);
+
+}
