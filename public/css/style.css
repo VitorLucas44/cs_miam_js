@@ -374,11 +374,13 @@ nav button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 4%;
 }
 #section5 h1 {
   color: black;
   text-align: center;
   font-family: Cookies;
+  font-size: 30px;
 }
 #section5 span {
   color: #22d2c0;

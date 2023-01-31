@@ -17,7 +17,6 @@ body.classList.add(dark_theme_class);
 }
 });
 
-
 //Espace JS
 //les produits
 let products = {
@@ -25,87 +24,119 @@ let products = {
     {
         productName: "fazfaez",
         category: "Starters",
-        price: "30",
+        price: "14,95",
         image: "./public/img/menu/menu-item-1.png",
 },
     {
         productName: "fazefaze",
         category: "Breakfast",
-        price: "49",
+        price: "20",
         image: "./public/img/menu/menu-item-2.png",
 },
     {
         productName: "afzefezaazef",
         category: "Dinner",
-        price: "99",
+        price: "21",
         image: "./public/img/menu/menu-item-6.png",
+},
+    {
+    productName: "afzefezaazef",
+    category: "Dinner",
+    price: "21",
+    image: "./public/img/menu/menu-item-6.png",
+},
+{
+    productName: "afzefezaazef",
+    category: "Dinner",
+    price: "21",
+    image: "./public/img/menu/menu-item-6.png",
 },
     {
         productName: "fazefaez",
         category: "Starters",
-        price: "29",
+        price: "8,99",
         image: "./public/img/menu/menu-item-4.png",
+},
+{
+    productName: "fazefaez",
+    category: "Starters",
+    price: "8,99",
+    image: "./public/img/menu/menu-item-4.png",
 },
     {
         productName: "fazfzaefaze",
         category: "Lunch",
-        price: "129",
+        price: "10,99",
         image: "./public/img/menu/menu-item-5.png",
+},
+{
+    productName: "fazfzaefaze",
+    category: "Lunch",
+    price: "10,99",
+    image: "./public/img/menu/menu-item-5.png",
 },
     {
         productName: "azfeafze",
         category: "Breakfast",
-        price: "89",
+        price: "10,99",
         image: "./public/img/menu/menu-item-1.png",
 },
     {
         productName: "afzefaez",
         category: "Lunch",
-        price: "189",
+        price: "15",
         image: "./public/img/menu/menu-item-4.png",
 },
     {
         productName: "fazefaez",
         category: "Breakfast",
-        price: "49",
+        price: "5,95",
+        ingredients:"salade, tomate, ognion",
         image: "./public/img/menu/menu-item-2.png",
         },
     ],
 };
+
 for (let i of products.data) {
-    //Create Card
-    let card = document.createElement("div");
-    //La carte doit avoir une categorie
-    card.classList.add("card", i.category);
-    //image div
-    let imgContainer = document.createElement("div");
-    imgContainer.classList.add("image-container");
-    //img tag
-    let image = document.createElement("img");
-    image.setAttribute("src", i.image);
-    imgContainer.appendChild(image);
-    card.appendChild(imgContainer);
-    //container
-    let container = document.createElement("div");
-    container.classList.add("container");
-    //product name
-    let name = document.createElement("h5");
-    name.classList.add("product-name");
-    name.innerText = i.productName.toUpperCase();
-    container.appendChild(name);
-    //prix
-    let price = document.createElement("h6");
-    price.innerText = "$" + i.price;
-    container.appendChild(price);
-    card.appendChild(container);
-    document.getElementById("products").appendChild(card);
+//Create Card
+let card = document.createElement("div");
+//La carte doit avoir une categorie
+card.classList.add("card", i.category);
+//image div
+let imgContainer = document.createElement("div");
+imgContainer.classList.add("image-container");
+//img tag
+let image = document.createElement("img");
+image.setAttribute("src", i.image);
+imgContainer.appendChild(image);
+card.appendChild(imgContainer);
+// /container
+let container = document.createElement("div");
+container.classList.add("container");
+//product name
+let name = document.createElement("h5");
+name.classList.add("product-name");
+name.innerText = i.productName.toUpperCase();
+container.appendChild(name);
+//ingrédient
+let ingredients = document.createElement("h6");
+ingredients.innerText = i.ingredients;
+container.appendChild(ingredients);
+card.appendChild(container);
+document.getElementById("products").appendChild(card);
+//prix
+let price = document.createElement("h7");
+price.innerText = "$" + i.price;
+container.appendChild(price);
+card.appendChild(container);
+document.getElementById("products").appendChild(card);
 }
-  //parameter passed from button (Parameter same as category)
+//fonction pour les bouton et les catégoris
 function filterProduct(value) {
-    //Button class code
+//Button class code
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
-      //check if value equals innerText
+//check if value equals innerText
 if (value.toUpperCase() == button.innerText.toUpperCase()) {
         button.classList.add("active");
 } else {
@@ -113,11 +144,8 @@ if (value.toUpperCase() == button.innerText.toUpperCase()) {
 }
 });
 
-//select all cards
 let elements = document.querySelectorAll(".card");
-//loop through all cards
 elements.forEach((element) => {
-//display all cards on 'all' button click
     if (value == "all") {
         element.classList.remove("hide");
     } else {
@@ -134,7 +162,7 @@ elements.forEach((element) => {
 }
 
 
-//Initially display all products
+//Quand sa va refresh
 window.onload = () => {
     ("Starters");
 };

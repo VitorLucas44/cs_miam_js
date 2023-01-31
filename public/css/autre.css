@@ -107,11 +107,15 @@ button[type=button]{
     align-items: center;
     border: none;
     text-decoration: underline;
+    font-size: 16px;
+    text-underline-offset: 10px;
 }
 .active {
-    color: green;
+    color: #22d2c0;
 }
-
+.button-value:hover{
+    color: #22d2c0;
+}
 #products {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -124,6 +128,10 @@ button[type=button]{
     margin-top: 1em;
     padding: 1em;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .image-container {
     text-align: center;
@@ -131,6 +139,10 @@ button[type=button]{
 .container {
     padding-top: 1em;
     color: #110f29;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container h5 {
     font-weight: 500;
