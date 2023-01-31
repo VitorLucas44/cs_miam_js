@@ -137,7 +137,6 @@ button[type=button]{
     text-align: center;
 }
 .container {
-    padding-top: 1em;
     color: #110f29;
     flex-direction: column;
     display: flex;
@@ -145,7 +144,18 @@ button[type=button]{
     align-items: center;
 }
 .container h5 {
-    font-weight: 500;
+    font-weight: bolder;
+    margin: 5px;
+}
+.container h7 {
+    color: #22d2c0;
+    font-weight: bolder;
+    margin: 5px;
+}
+.container h6 {
+    color: #bcb4ab;
+    font-weight: bolder;
+    margin: 5px;
 }
 .hide {
     display: none;

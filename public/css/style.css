@@ -42,6 +42,27 @@ body {
   background-color: black;
   color: white;
 }
+.dark #section5 h1 {
+  color: white;
+}
+.dark #section5 h1 span {
+  color: #22d2c0;
+}
+.dark #section5 .card {
+  background-color: #433f3f;
+}
+.dark #section5 .card .container h5 {
+  color: white;
+}
+.dark #section5 button {
+  color: white;
+}
+.dark #section5 button:hover {
+  color: #22d2c0;
+}
+.dark #section5 button.active {
+  color: #22d2c0;
+}
 
 @font-face {
   font-family: "Cookies";
