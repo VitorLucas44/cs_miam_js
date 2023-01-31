@@ -168,7 +168,7 @@ nav button:hover {
   justify-content: center;
 }
 #section2 .imgsec2 {
-  margin-right: 2%;
+  margin-right: 4%;
 }
 #section2 .imgsec2 img {
   width: 700px;
@@ -192,7 +192,6 @@ nav button:hover {
 }
 #section2 .txtsec2 {
   list-style-image: url("../img/check-double-solid.svg");
-  list-style: #22d2c0;
 }
 #section2 .txtsec2 .play {
   display: flex;
@@ -200,9 +199,45 @@ nav button:hover {
   align-items: center;
 }
 #section2 .txtsec2 .play img {
-  widows: 300px;
+  width: 100%;
   height: 350px;
   padding-top: 10px;
+}
+#section2 .txtsec2 .play .redplay {
+  position: relative;
+  background-color: rgba(186, 33, 33, 0.24);
+  width: 140px;
+  height: 110px;
+  border-radius: 100%;
+  right: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#section2 .txtsec2 .play .redplay .btnplay {
+  background-color: #22d2c0;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+#section2 .txtsec2 .play .redplay .btnplay i {
+  font-size: 25px;
+  color: white;
+  opacity: 1;
+  z-index: 7;
+  transition: transform 0.1s;
+}
+#section2 .txtsec2 .play .redplay .btnplay i:hover {
+  transition-delay: 0, 5s;
+  z-index: 6;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(4.5);
 }
 
 /*# sourceMappingURL=style.css.map */
