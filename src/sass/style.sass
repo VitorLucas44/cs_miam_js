@@ -20,7 +20,6 @@ body
                 color: $green
         h2
             color: white
-
         span
             color: white
         li
@@ -29,6 +28,11 @@ body
             .imgsec2
                 .blanc
                     background-color: $grey
+    #section3
+        background-color: $grey
+        .cardblanche
+            background-color: black
+            color: white
 
 @font-face 
     font-family: "Cookies"
@@ -37,6 +41,8 @@ body
     background-color: #252525
     width: 100%
     height: 30px
+    z-index: 10
+.fixed
     z-index: 10
 nav
     display: flex
@@ -151,6 +157,7 @@ nav
         display: flex
         justify-content: space-evenly
         justify-content: center
+        margin: 1%
     .imgsec2
         margin-right: 4%
         img
@@ -214,12 +221,11 @@ nav
                 .btnplay:hover
                     overflow: hidden
 
-
 #section3
     display: flex
     justify-content: space-evenly
     background-color: #eeeeee
-    padding: 2%
+    padding: 5%
     .cardverte
         display: flex
         flex-direction: column
