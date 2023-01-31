@@ -37,12 +37,14 @@ body
     background-color: #252525
     width: 100%
     height: 30px
+    z-index: 10
 nav
     display: flex
     justify-content: space-evenly
     align-items: center
     background-color: white
     width: 100%
+    z-index: 10
     a
         text-decoration: none
         color: black
@@ -163,6 +165,7 @@ nav
             bottom: 150px
             width: 70%
             left: 110px
+            z-index: 9
             span
                 font-size: 20px
                 color: $green
@@ -188,7 +191,7 @@ nav
                 display: flex
                 justify-content: center
                 align-items: center
-                z-index: 10
+                z-index: 5
                 .btnplay
                     background-color: $green
                     border-radius: 100%
@@ -197,19 +200,20 @@ nav
                     display: flex
                     justify-content: center
                     align-items: center
-                    z-index: 9
+                    z-index: 5
                     i
                         font-size: 25px
                         color: white
                         opacity: 1
-                        z-index: 7
                         transition: transform .1s
                     i:hover
                         transition-delay: 0,5s
-                        z-index: 6
                         -ms-transform: scale(1.5)
                         -webkit-transform: scale(1.5)
-                        transform: scale(4.5)
+                        transform: scale(8.5)
+                .btnplay:hover
+                    overflow: hidden
+
 
 #section3
     display: flex
@@ -262,12 +266,9 @@ nav
             i
                 color: $green
                 font-size: 30px
+        span
+            margin: 1%
     .cardblanche:hover
-        // padding-top: 20px
-        // padding-bottom: 20px
-        // padding-left: 10px
-        // padding-right: 10px
-        // transition-duration: 1s
         -ms-transform: scale(0.5)
         -webkit-transform: scale(0.5)
         transform: scale(1.1)
