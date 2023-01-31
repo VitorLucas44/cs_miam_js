@@ -13,9 +13,23 @@ body
     #section1
         background-color: $grey
         color: white
+    #section2
+        h1
+            color: white
+            span
+                color: $green
+        h2
+            color: white
+
         span
-            a
-                color: white
+            color: white
+        li
+            color: white
+        .sec2
+            .imgsec2
+                .blanc
+                    background-color: $grey
+
 @font-face 
     font-family: "Cookies"
     src: url(../font/CookiesandmilkRegular-W64Y.ttf)
@@ -196,6 +210,68 @@ nav
                         -ms-transform: scale(1.5)
                         -webkit-transform: scale(1.5)
                         transform: scale(4.5)
+
+#section3
+    display: flex
+    justify-content: space-evenly
+    background-color: #eeeeee
+    padding: 2%
+    .cardverte
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: $green
+        width: 700px
+        height: 400px
+        color: white
+        h2
+            font-size: 30px
+        span
+            margin: 5%
+        button
+            color: white
+            background-color: #7be1d2
+            border-radius: 30px
+            width: 130px
+            height: 40px
+            border: none
+            align-items: center
+            a
+                text-decoration: none
+                color: white
+    .cardblanche
+        background-color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin: 2%
+        width: 500px
+        height: 350px
+        transition: transform .1s
+        .belge
+            background-color: #fae9e9
+            border-radius: 100%
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            i
+                color: $green
+                font-size: 30px
+    .cardblanche:hover
+        // padding-top: 20px
+        // padding-bottom: 20px
+        // padding-left: 10px
+        // padding-right: 10px
+        // transition-duration: 1s
+        -ms-transform: scale(0.5)
+        -webkit-transform: scale(0.5)
+        transform: scale(1.1)
+
 
 
 

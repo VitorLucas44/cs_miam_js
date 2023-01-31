@@ -17,8 +17,23 @@ body {
   background-color: #433f3f;
   color: white;
 }
-.dark #section1 span a {
+.dark #section2 h1 {
   color: white;
+}
+.dark #section2 h1 span {
+  color: #22d2c0;
+}
+.dark #section2 h2 {
+  color: white;
+}
+.dark #section2 span {
+  color: white;
+}
+.dark #section2 li {
+  color: white;
+}
+.dark #section2 .sec2 .imgsec2 .blanc {
+  background-color: #433f3f;
 }
 
 @font-face {
@@ -238,6 +253,72 @@ nav button:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(4.5);
+}
+
+#section3 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+  padding: 2%;
+}
+#section3 .cardverte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22d2c0;
+  width: 700px;
+  height: 400px;
+  color: white;
+}
+#section3 .cardverte h2 {
+  font-size: 30px;
+}
+#section3 .cardverte span {
+  margin: 5%;
+}
+#section3 .cardverte button {
+  color: white;
+  background-color: #7be1d2;
+  border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  border: none;
+  align-items: center;
+}
+#section3 .cardverte button a {
+  text-decoration: none;
+  color: white;
+}
+#section3 .cardblanche {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+  width: 500px;
+  height: 350px;
+  transition: transform 0.1s;
+}
+#section3 .cardblanche .belge {
+  background-color: #fae9e9;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section3 .cardblanche .belge i {
+  color: #22d2c0;
+  font-size: 30px;
+}
+#section3 .cardblanche:hover {
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
