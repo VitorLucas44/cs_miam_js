@@ -818,6 +818,9 @@ footer .copy .infos span {
   color: grey;
   font-size: 16px;
 }
+footer .copy .infos i {
+  margin: 2px;
+}
 footer .hache {
   display: flex;
   flex-direction: column;
