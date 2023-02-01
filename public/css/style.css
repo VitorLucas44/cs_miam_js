@@ -90,6 +90,28 @@ body {
 .dark .wrapper h1 {
   color: white;
 }
+.dark #section8 {
+  background-color: #433f3f;
+}
+.dark #section8 .cartes .sec8txt {
+  background-color: black;
+  color: white;
+}
+.dark #section9 .titre h1 {
+  color: white;
+}
+.dark #section9 .book .books {
+  background-color: #433f3f;
+}
+.dark .product {
+  background-color: #433f3f;
+}
+.dark .product .nxt-btn {
+  background-color: black;
+}
+.dark .product .pre-btn {
+  background-color: black;
+}
 
 @font-face {
   font-family: "Cookies";
@@ -508,7 +530,7 @@ nav button:hover {
 }
 #section8 .titre {
   margin-top: 5%;
-  padding-top: 2%;
+  padding-top: 3%;
   padding-bottom: 5%;
 }
 #section8 .titre p {
@@ -642,6 +664,28 @@ nav button:hover {
   width: 130px;
   height: 40px;
   border: none;
+}
+
+.product {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  margin-top: 5%;
+}
+.product .titre {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.product .titre p {
+  color: #706969;
+  text-align: center;
+}
+.product .titre h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+.product .titre h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
 }
 
 /*# sourceMappingURL=style.css.map */
