@@ -503,8 +503,13 @@ nav button:hover {
   color: white;
 }
 
+#section8 {
+  background-color: #eeeeee;
+}
 #section8 .titre {
   margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 #section8 .titre p {
   color: #706969;
@@ -518,6 +523,125 @@ nav button:hover {
 #section8 .titre h1 span {
   color: #22d2c0;
   font-family: Cookies;
+}
+#section8 .cartes {
+  display: flex;
+  justify-content: space-evenly;
+}
+#section8 .cartes .carte {
+  width: 350px;
+  transition-duration: 1s;
+}
+#section8 .cartes .carte .vague {
+  position: relative;
+}
+#section8 .cartes .carte svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  bottom: 100px;
+  color: white;
+  height: 100px;
+}
+#section8 .cartes .carte img {
+  width: 100%;
+  height: 450px;
+}
+#section8 .cartes .sec8txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  position: relative;
+  bottom: 120px;
+  font-size: 10px;
+  height: 150px;
+  background-color: white;
+}
+#section8 .cartes .sec8txt h2 {
+  font-size: 12px;
+  color: #706969;
+}
+#section8 .cartes .sec8txt span {
+  padding: 3%;
+}
+#section8 .cartes .carte:hover {
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(1.1);
+}
+
+#section9 .titre {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#section9 .titre p {
+  color: #706969;
+  text-align: center;
+}
+#section9 .titre h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+#section9 .titre h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+#section9 .book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section9 .book img {
+  width: 30%;
+  height: 500px;
+}
+#section9 .book .books {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+  background-color: #eeeeee;
+  height: 350px;
+}
+#section9 .book .books .input1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+#section9 .book .books .input1 input {
+  margin: 1%;
+  width: 230px;
+}
+#section9 .book .books .input2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+#section9 .book .books .input2 input {
+  margin: 1%;
+}
+#section9 .book .books .input3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#section9 .book .books .input3 input {
+  margin: 1%;
+  height: 150px;
+}
+#section9 .book .books .input3 button {
+  color: white;
+  background-color: #22d2c0;
+  border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
