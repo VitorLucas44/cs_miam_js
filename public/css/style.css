@@ -72,6 +72,24 @@ body {
 .dark nav .navbar a:hover {
   color: white;
 }
+.dark .testim {
+  background-color: #433f3f;
+}
+.dark .testim .titre h1 {
+  color: white;
+}
+.dark .testim .wrap .cont p {
+  color: white;
+}
+.dark .testim .wrap .arrow.right {
+  opacity: 0;
+}
+.dark .testim .wrap .arrow.left {
+  opacity: 0;
+}
+.dark .wrapper h1 {
+  color: white;
+}
 
 @font-face {
   font-family: "Cookies";
@@ -435,6 +453,69 @@ nav button:hover {
   font-family: Cookies;
 }
 .testim .titre h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+
+.wrapper h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+  font-size: 30px;
+}
+.wrapper span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+.wrapper p {
+  color: #706969;
+  text-align: center;
+}
+.wrapper .carousel {
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.wrapper .carousel .happy {
+  position: relative;
+  font-size: 14px;
+  bottom: 50px;
+  right: 350px;
+  color: red;
+  font-display: Bold;
+}
+.wrapper .carousel .happy h1 {
+  color: white;
+  font-size: 20px;
+}
+.wrapper .carousel .happy h2 {
+  font-size: 18px;
+  color: white;
+  text-underline-offset: 8px;
+  text-decoration: underline #22d2c0;
+}
+.wrapper .carousel .happy span {
+  font-size: 14px;
+  color: white;
+}
+
+#section8 .titre {
+  margin-top: 5%;
+}
+#section8 .titre p {
+  color: #706969;
+  text-align: center;
+}
+#section8 .titre h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+#section8 .titre h1 span {
   color: #22d2c0;
   font-family: Cookies;
 }
