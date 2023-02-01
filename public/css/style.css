@@ -112,6 +112,16 @@ body {
 .dark .product .pre-btn {
   background-color: black;
 }
+.dark #section11 .titre h1 {
+  color: white;
+}
+.dark #section11 .ligne .details {
+  background-color: #433f3f;
+  color: white;
+}
+.dark #section11 .forme {
+  background-color: #433f3f;
+}
 
 @font-face {
   font-family: "Cookies";
@@ -686,6 +696,97 @@ nav button:hover {
 .product .titre h1 span {
   color: #22d2c0;
   font-family: Cookies;
+}
+
+#section11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section11 .titre {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#section11 .titre p {
+  color: #706969;
+  text-align: center;
+}
+#section11 .titre h1 {
+  color: black;
+  text-align: center;
+  font-family: Cookies;
+}
+#section11 .titre h1 span {
+  color: #22d2c0;
+  font-family: Cookies;
+}
+#section11 .details {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  margin-top: 2%;
+  margin: 2%;
+}
+#section11 .ligne {
+  display: flex;
+  justify-content: space-evenly;
+}
+#section11 .ligne .blabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section11 .ligne .blabla span {
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+#section11 .ligne .blabla h1 {
+  margin: 0;
+  padding: 0;
+}
+#section11 .ligne .icone {
+  background-color: #22d2c0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+#section11 .forme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+}
+#section11 .forme .nompre input {
+  width: 400px;
+}
+#section11 .forme input {
+  width: 825px;
+}
+#section11 .forme button {
+  color: white;
+  background-color: #22d2c0;
+  border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
