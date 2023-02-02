@@ -1065,6 +1065,18 @@ footer .hache span {
   .noir {
     width: 768px;
   }
+  #section8 .cartes .carte {
+    width: 230px;
+  }
+  #section8 .cartes .carte svg {
+    bottom: 90px;
+  }
+  #section8 .cartes .sec8txt {
+    width: 230px;
+  }
+  #section9 .book .books .input1 input {
+    width: 130px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
