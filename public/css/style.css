@@ -1071,11 +1071,29 @@ footer .hache span {
   #section8 .cartes .carte svg {
     bottom: 90px;
   }
+  #section8 .cartes .carte .resaux {
+    display: none;
+  }
   #section8 .cartes .sec8txt {
     width: 230px;
   }
   #section9 .book .books .input1 input {
     width: 130px;
+  }
+  #section11 .titre iframe {
+    width: 600px;
+  }
+  #section11 .ligne {
+    flex-direction: column;
+  }
+  #section11 .forme .nompre {
+    display: flex;
+  }
+  #section11 .forme .nompre input {
+    width: 250px;
+  }
+  #section11 .forme input {
+    width: 523px;
   }
 }
 
