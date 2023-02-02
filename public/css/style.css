@@ -1011,5 +1011,24 @@ footer .hache span {
     width: 280px;
   }
 }
+@media screen and (max-width: 1025px) {
+  #section2 .sec2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testim .cont div .img img {
+    width: 80px;
+    height: 80px;
+  }
+  .testim .wrap {
+    padding: 0px;
+  }
+  .testim .dots {
+    bottom: 20px;
+  }
+  .wrapper .carousel .happy {
+    right: 300px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
