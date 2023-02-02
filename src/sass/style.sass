@@ -723,25 +723,43 @@ footer
             color: grey
 
 @media screen and (max-width: 426px)
+
     nav
         display: flex
         flex-direction: column
         align-items: flex-start
-        padding-left: 20%
         .navbar
             display: flex
             flex-direction: column
-.fixed
-    position: static
+    .fixed
+        position: static
 
-#section1
-    flex-direction: column
-    text-align: center
-#section2
-    text-align: center
-    .sec2
+    #section1
         flex-direction: column
-        .blanc
-            display: none
-    img
-        
+        text-align: center
+    #section2
+        text-align: center
+        .sec2
+            flex-direction: column
+            .blanc
+                display: none
+        .imgsec2
+            img
+                height: 200px
+                margin: 3%
+        .txtsec2
+            .play
+                flex-direction: column
+                img
+                    height: 200px
+                    margin: 3%
+                .redplay
+                    display: none
+    #section3
+        flex-direction: column
+        text-align: center
+        .cardverte
+            width: 380px
+        .cardblanche
+            width: 380px
+    
