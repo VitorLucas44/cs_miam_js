@@ -926,6 +926,22 @@ footer .hache span {
   #section5 .wrapper #buttons button {
     font-size: 14px;
   }
+  .testim .wrap {
+    padding: 0px;
+  }
+  .testim .cont div p {
+    font-size: 12px;
+  }
+  .testim .cont div .ligne-verte {
+    display: none;
+  }
+  .testim .cont div .img img {
+    width: 80px;
+    height: 80px;
+  }
+  .testim .dots {
+    bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
