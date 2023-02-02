@@ -981,6 +981,9 @@ footer .hache span {
   #section11 .forme .nompre input {
     width: 280px;
   }
+  footer .copy {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
