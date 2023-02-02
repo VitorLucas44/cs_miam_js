@@ -985,5 +985,22 @@ footer .hache span {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 376px) {
+  #section3 .cardverte {
+    width: 330px;
+  }
+  #section3 .cardblanche {
+    width: 325px;
+  }
+  #section5 .wrapper #buttons button {
+    font-size: 12px;
+  }
+  #section8 .cartes .carte {
+    margin-left: 15px;
+  }
+  #section8 .cartes .resaux {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
