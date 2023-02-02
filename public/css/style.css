@@ -959,6 +959,28 @@ footer .hache span {
     flex-direction: column;
     align-items: center;
   }
+  #section11 iframe {
+    width: 300px;
+  }
+  #section11 .ligne {
+    flex-direction: column;
+  }
+  #section11 .details {
+    width: 300px;
+  }
+  #section11 .forme {
+    margin-bottom: 40px;
+  }
+  #section11 .forme input {
+    width: 300px;
+  }
+  #section11 .forme .nompre {
+    align-items: center;
+    width: 300px;
+  }
+  #section11 .forme .nompre input {
+    width: 280px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
