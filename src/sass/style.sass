@@ -722,12 +722,101 @@ footer
         span
             color: grey
 
+// LAPTOP
+@media screen and (max-width: 1025px)
+    #section2
+        .sec2
+            flex-direction: column
+            align-items: center
+    .testim 
+        .cont 
+            div 
+                .img
+                    img
+                        width: 80px
+                        height: 80px
+        .wrap
+            padding: 0px
+        .dots
+            bottom: 20px
+    .wrapper 
+        .carousel 
+            .happy
+                right: 300px
+    #section8 
+        .cartes 
+            .sec8txt
+                width: 300px
+            .carte
+                width: 300px
+            .carte:hover 
+                .resaux
+                    left: 250px
+    nav
+        width: 1024px
+    #section9 
+        .book 
+            .books 
+                .input1 
+                    input
+                        width: 200px
+    #section11 
+        .forme 
+            .nompre 
+                input
+                    width: 350px
+            input
+                width: 720px
+
+// TABLETTE
+@media screen and (max-width: 768px)
+    .fixed
+        position: static
+    nav
+        width: 768px
+        flex-direction: column
+        button
+            margin: 3%
+    .noir
+        width: 768px
+    #section8 
+        .cartes 
+            .carte
+                width: 230px
+                svg
+                    bottom: 90px
+                .resaux
+                    display: none
+            .sec8txt
+                width: 230px
+    #section9 
+        .book 
+            .books 
+                .input1
+                    input
+                        width: 130px
+    #section11
+        .titre
+            iframe
+                width: 600px
+        .ligne
+            flex-direction: column
+        .forme
+            .nompre
+                display: flex
+                input
+                    width: 250px
+            input
+                width: 523px
+// MOBILE L
 @media screen and (max-width: 426px)
 
     nav
         display: flex
         flex-direction: column
         align-items: flex-start
+        width: 425px
+        align-items: center
         .navbar
             display: flex
             flex-direction: column
@@ -788,7 +877,7 @@ footer
         .cartes
             flex-direction: column
             .carte
-                margin-left: 40px
+                margin-left: 80px
                 height: 500px
     #section9
         .book
@@ -799,8 +888,9 @@ footer
                 flex-direction: column
                 align-items: center
     #section11
-        iframe
-            width: 300px
+        .titre
+            iframe
+                width: 300px
         .ligne
             flex-direction: column
         .details
@@ -821,6 +911,7 @@ footer
             hr
                 margin: 0px
 
+// MOBILE M
 @media screen and (max-width: 376px)
     #section3
         .cardverte
@@ -835,96 +926,16 @@ footer
     #section8 
         .cartes 
             .carte 
-                margin-left: 15px
+                margin-left: 65px
             .resaux
                 display: none
-    #section11 
-        .forme
-            .nompre
-                input
-                    width: 280px 
-            input
-                width: 280px
-@media screen and (max-width: 1025px)
-    #section2
-        .sec2
-            flex-direction: column
-            align-items: center
-    .testim 
-        .cont 
-            div 
-                .img
-                    img
-                        width: 80px
-                        height: 80px
-        .wrap
-            padding: 0px
-        .dots
-            bottom: 20px
-    .wrapper 
-        .carousel 
-            .happy
-                right: 300px
-    #section8 
-        .cartes 
-            .sec8txt
-                width: 300px
-            .carte
-                width: 300px
-            .carte:hover 
-                .resaux
-                    left: 250px
-    nav
-        width: 1024px
-    #section9 
-        .book 
-            .books 
-                .input1 
-                    input
-                        width: 200px
-    #section11 
-        .forme 
-            .nompre 
-                input
-                    width: 350px
-            input
-                width: 720px
-@media screen and (max-width: 769px)
-    .fixed
-        position: static
-    nav
-        width: 768px
-        flex-direction: column
-        button
-            margin: 3%
-    .noir
-        width: 768px
-    #section8 
-        .cartes 
-            .carte
-                width: 230px
-                svg
-                    bottom: 90px
-                .resaux
-                    display: none
-            .sec8txt
-                width: 230px
-    #section9 
-        .book 
-            .books 
-                .input1
-                    input
-                        width: 130px
     #section11
         .titre
             iframe
-                width: 600px
-        .ligne
-            flex-direction: column
+                width: 200px 
         .forme
             .nompre
-                display: flex
                 input
-                    width: 250px
+                    width: 130px 
             input
-                width: 523px
+                width: 280px

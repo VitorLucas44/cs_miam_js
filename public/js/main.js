@@ -146,7 +146,7 @@ function filterProduct(value) {
 //Button class code
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
-//check if value equals innerText
+//vérifier si la valeur est égale à innerTex
 if (value.toUpperCase() == button.innerText.toUpperCase()) {
         button.classList.add("active");
 } else {
@@ -159,12 +159,12 @@ elements.forEach((element) => {
     if (value == "all") {
         element.classList.remove("hide");
     } else {
-        //Check if element contains category class
+        //Vérifier si l'élément contient une classe de catégorie
         if (element.classList.contains(value)) {
-          //display element based on category
+          //élément d'affichage basé sur la catégorie
         element.classList.remove("hide");
     } else {
-          //hide other elements
+          //cacher les autes
         element.classList.add("hide");
     }
         }
@@ -175,9 +175,6 @@ elements.forEach((element) => {
 window.onload = () => {
     ("Starters");
 };
-
-
-
 
 // variable et get du testim
 let testim = document.getElementById("testim"),
@@ -191,7 +188,9 @@ let testim = document.getElementById("testim"),
     testimTimer
     ;
 window.onload = function () {
-// Testim Script
+
+
+// CArousel 1
     function playSlide(slide) {
         for (var k = 0; k < testimDots.length; k++) {
             testimContent[k].classList.remove("active");
@@ -231,40 +230,40 @@ window.onload = function () {
 
 }
 
-
+// carousel2
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
-const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+const showHideIcons = () => {   
+// afficher et masquer l'icône précédent/suivant en fonction de la valeur de défilement vers la gauche du carrousel
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
     arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
     arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
-        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        let firstImgWidth = firstImg.clientWidth + 14;
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+        setTimeout(() => showHideIcons(), 60);
+        //  appel de showHideIcons après 60ms
     });
 });
 const autoSlide = () => {
-    // if there is no image left to scroll then return from here
+    // s'il n'y a plus d'image à faire défiler, revenez d'ici
     if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    positionDiff = Math.abs(positionDiff); // rendre la valeur positionDiff positive
     let firstImgWidth = firstImg.clientWidth + 14;
-    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    // obtenir la valeur de différence qui doit être ajoutée ou réduite du carrousel à gauche pour prendre le centre img du milieu
     let valDifference = firstImgWidth - positionDiff;
-    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+    if(carousel.scrollLeft > prevScrollLeft) { // si on scroll vers la droite
         return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
     // si sa scroll a gauche
     carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
 const dragStart = (e) => {
-    // updatating global variables value on mouse down event
+// mise à jour de la valeur des variables globales lors de l'événement de souris enfoncée 
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
     prevScrollLeft = carousel.scrollLeft;
