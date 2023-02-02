@@ -984,6 +984,9 @@ footer .hache span {
   footer .copy {
     flex-direction: column;
   }
+  footer .hache hr {
+    margin: 0px;
+  }
 }
 @media screen and (max-width: 376px) {
   #section3 .cardverte {
@@ -1000,6 +1003,12 @@ footer .hache span {
   }
   #section8 .cartes .resaux {
     display: none;
+  }
+  #section11 .forme .nompre input {
+    width: 280px;
+  }
+  #section11 .forme input {
+    width: 280px;
   }
 }
 
