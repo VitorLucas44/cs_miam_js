@@ -1044,6 +1044,27 @@ footer .hache span {
   #section9 .book .books .input1 input {
     width: 200px;
   }
+  #section11 .forme .nompre input {
+    width: 350px;
+  }
+  #section11 .forme input {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .fixed {
+    position: static;
+  }
+  nav {
+    width: 768px;
+    flex-direction: column;
+  }
+  nav button {
+    margin: 3%;
+  }
+  .noir {
+    width: 768px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
