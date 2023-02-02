@@ -1029,6 +1029,21 @@ footer .hache span {
   .wrapper .carousel .happy {
     right: 300px;
   }
+  #section8 .cartes .sec8txt {
+    width: 300px;
+  }
+  #section8 .cartes .carte {
+    width: 300px;
+  }
+  #section8 .cartes .carte:hover .resaux {
+    left: 250px;
+  }
+  nav {
+    width: 1024px;
+  }
+  #section9 .book .books .input1 input {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
