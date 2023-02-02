@@ -883,4 +883,19 @@ footer .hache span {
   position: static;
 }
 
+#section1 {
+  flex-direction: column;
+  text-align: center;
+}
+
+#section2 {
+  text-align: center;
+}
+#section2 .sec2 {
+  flex-direction: column;
+}
+#section2 .sec2 .blanc {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
