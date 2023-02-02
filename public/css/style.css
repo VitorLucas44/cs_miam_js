@@ -942,6 +942,13 @@ footer .hache span {
   .testim .dots {
     bottom: 15px;
   }
+  #section8 .cartes {
+    flex-direction: column;
+  }
+  #section8 .cartes .carte {
+    margin-left: 40px;
+    height: 500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
