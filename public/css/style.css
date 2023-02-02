@@ -917,6 +917,15 @@ footer .hache span {
   #section3 .cardblanche {
     width: 380px;
   }
+  #section5 {
+    padding-bottom: 250px;
+  }
+  #section5 .wrapper #buttons {
+    display: flex;
+  }
+  #section5 .wrapper #buttons button {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
