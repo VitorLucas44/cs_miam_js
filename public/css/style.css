@@ -611,8 +611,8 @@ nav button:hover {
 }
 #section8 .cartes .carte:hover .resaux {
   opacity: 1;
-  right: 10px;
-  position: relative;
+  left: 290px;
+  position: absolute;
 }
 #section8 .cartes .resaux {
   display: flex;
@@ -620,13 +620,14 @@ nav button:hover {
   background-color: rgba(238, 238, 238, 0.9333333333);
   position: relative;
   bottom: 500px;
-  left: 300px;
+  left: 330px;
   opacity: 0;
   width: 30px;
   height: 80px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-duration: 1s;
 }
 #section8 .cartes .resaux i {
   margin: 4%;
@@ -864,6 +865,22 @@ footer .hache hr {
 }
 footer .hache span {
   color: grey;
+}
+
+@media screen and (max-width: 426px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+  nav .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.fixed {
+  position: static;
 }
 
 /*# sourceMappingURL=style.css.map */

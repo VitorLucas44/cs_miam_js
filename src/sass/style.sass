@@ -512,21 +512,22 @@ nav
             transform: scale(1.1)
             .resaux
                 opacity: 1
-                right: 10px
-                position: relative
+                left: 290px
+                position: absolute
         .resaux
             display: flex
             flex-direction: column
             background-color: #eeee
             position: relative
             bottom: 500px
-            left: 300px
+            left: 330px
             opacity: 0
             width: 30px
             height: 80px
             justify-content: center
             align-items: center
             cursor: pointer
+            transition-duration: 1s
             i
                 margin: 4%
 #section9
@@ -720,3 +721,15 @@ footer
             margin-bottom: 30px
         span
             color: grey
+
+@media screen and (max-width: 426px)
+    nav
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding-left: 20%
+        .navbar
+            display: flex
+            flex-direction: column
+.fixed
+    position: static
