@@ -171,12 +171,7 @@ elements.forEach((element) => {
     });
 }
 
-//Quand sa va refresh
-window.onload = () => {
-    ("Starters");
-};
-
-// variable et get du testim
+// variable et get du carousel 1
 let testim = document.getElementById("testim"),
     testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
@@ -235,33 +230,6 @@ const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
-const showHideIcons = () => {   
-// afficher et masquer l'icône précédent/suivant en fonction de la valeur de défilement vers la gauche du carrousel
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
-}
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 14;
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-        setTimeout(() => showHideIcons(), 60);
-        //  appel de showHideIcons après 60ms
-    });
-});
-const autoSlide = () => {
-    // s'il n'y a plus d'image à faire défiler, revenez d'ici
-    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-    positionDiff = Math.abs(positionDiff); // rendre la valeur positionDiff positive
-    let firstImgWidth = firstImg.clientWidth + 14;
-    // obtenir la valeur de différence qui doit être ajoutée ou réduite du carrousel à gauche pour prendre le centre img du milieu
-    let valDifference = firstImgWidth - positionDiff;
-    if(carousel.scrollLeft > prevScrollLeft) { // si on scroll vers la droite
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }
-    // si sa scroll a gauche
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
 const dragStart = (e) => {
 // mise à jour de la valeur des variables globales lors de l'événement de souris enfoncée 
     isDragStart = true;
